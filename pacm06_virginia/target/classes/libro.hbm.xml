@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+		<class name="pacm06_virginia.Libro" table="libros" catalog="pacm06_virginia">
+			<id name="idLibro">
+				<column name="id_libro"/>
+				<generator class="increment"/>
+			</id>
+			<property name="titulo"></property>
+			<property name="autor"></property>
+			<property name="anio_publicacion" type="integer"></property>
+			<property name="disponible" type="boolean"></property>
+		</class>
+	</hibernate-mapping>
